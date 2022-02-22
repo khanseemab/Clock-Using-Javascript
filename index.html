@@ -11,19 +11,8 @@
     <link rel="icon" href="Icon.ico" type="image/icon">
     
     <title>Hello world</title>
-    <script>
-      let a;
-      let date;
-      let time;
-      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-      setInterval(()=>{
-
-      a = new Date();
-        date = a.toLocaleDateString(undefined,options);
-        time = a.getHours() + ' : ' + a.getMinutes() + ' : ' + a.getSeconds();
-        document.getElementById('time').innerHTML = time + "<br> on " + date;
-    },100);
-
+    <script src="clock.js">
+     
     </script>
   </head>
   <body>
@@ -53,10 +42,10 @@
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
-            </li>
+            <!-- </li>
             <li class="nav-item">
               <a class="nav-link disabled">Disabled</a>
-            </li>
+            </li> -->
           </ul>
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -67,13 +56,13 @@
     </nav>
     <div class="container text-center" my-4> 
       <div class="jumbotron" >
-      <h1 class="display-4">Current Time Is :<span id="time"></span></h1>
-      <p class="lead">We have Got You Covered</p>
-      <hr class="my-4">
-      <p>We have Time for different Countries</p>
-      <p class="lead">
+      <h2 class="display-4">Current Time Is   - <span id="time"></span></h2>
+      <!-- <p class="lead">We have Got You Covered</p> -->
+      <!-- <hr class="my-4"> -->
+      <!-- <p>We have Time for different Countries</p> -->
+      <!-- <p class="lead">
         <a class="btn btn-primary btn-lg" href="#" role="button">Browse Time</a>
-      </p>
+      </p> -->
     </div>
 
     </div>
@@ -128,26 +117,7 @@
           </form>
         </div>
       </section>
-    
-      <!-- Footer social -->
-      <!-- <section class="ft-social">
-        <ul class="ft-social-list">
-          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fab fa-github"></i></a></li>
-          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-        </ul>
-      </section> -->
-    
-      <!-- Footer legal -->
-      <!-- <section class="ft-legal">
-        <ul class="ft-legal-list">
-          <li><a href="#">Terms &amp; Conditions</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li>&copy; 2021 by Meow Media, LLC</li>
-        </ul> -->
+      
       </section>
     </footer>
   </body>

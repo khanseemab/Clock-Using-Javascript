@@ -1,10 +1,5 @@
 /* Generic styling */
-* {
-    box-sizing: border-box;
-    font-family: "Lato", sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+* 
   ul {
     list-style: none;
     padding-left: 0;
@@ -35,7 +30,7 @@
   }
   .container {
     flex: 1;
-    margin-top: 80px;
+    margin-top: 85px;
   }
   /* Footer main */
   .ft-main {
@@ -47,12 +42,10 @@
     .ft-main {
       justify-content: space-evenly;
     }
+  
   }
-  @media only screen and (min-width: 77.5rem /* 1240px */) {
-    .ft-main {
-      justify-content: space-evenly;
-    }
-  }
+
+  
   .ft-main-item {
     padding: 1.25rem;
     min-width: 12.5rem;
@@ -62,6 +55,7 @@
   form {
     display: flex;
     flex-wrap: wrap;
+  
   }
   input[type="email"] {
     border: 0;
@@ -109,4 +103,19 @@
   .ft-legal-list li:nth-last-child(2) {
       flex: 1;
   }
-  
+  /* {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+  } */
+  h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+    
+  }
+  /* span{
+    color: rgb(105, 105, 105);
+    font-size: 24px;
+  } */
